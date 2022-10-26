@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Logingg.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="REGISTRO DE NOTAS UISRAEL" FontSize="20" TextColor="Blue"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="txtNombre" Placeholder="Ingrese su nombre" BackgroundColor="Beige" 
+                   VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+
+            <Label Text="INGRESE SUS NOTAS" FontSize="20" TextColor="Blue"
+                   VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+
+            <Entry x:Name="txtnota1" Placeholder="Ingrese su primera nota" 
+                   BackgroundColor="Beige" VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="Center" Keyboard="Numeric"/>
+            
+            <Entry x:Name="txtnotaexam1" Placeholder="Ingrese su nota de examen" 
+                   BackgroundColor="Beige" VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="Center" Keyboard="Numeric"/>
+
+            <Entry x:Name="txtnota2" Placeholder="Ingrese su segunda nota" 
+                   BackgroundColor="Beige" VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" Keyboard="Numeric"/>
+
+            <Entry x:Name="txtnotaexam2" Placeholder="Ingrese su segunda nota de examen" 
+                   BackgroundColor="Beige" VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="Center" Keyboard="Numeric"/>
+
+            <Button x:Name="btnregistro" Text="Calcular nota" BackgroundColor="Bisque" 
+                    BorderColor="Red" Clicked="btnregistro_Clicked"
+                    VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

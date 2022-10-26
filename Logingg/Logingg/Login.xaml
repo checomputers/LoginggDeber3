@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Logingg.Login">
+    
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Image Source="uisrael"/>
+            
+                <Image Source="https://sige.uisrael.edu.ec/imagenes/logo%20oficial.png"/>
+            
+            <Label Text="LOGIN INGRESO" VerticalOptions="CenterAndExpand" 
+                   FontSize="30" TextColor="Black"/>
+            
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese su usuario"/>
+            
+            <Entry x:Name="txtContrasena" Placeholder="Ingrese su contrasena" 
+                   IsPassword="True"/>
+
+            <Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked" 
+                    BackgroundColor="Coral"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
